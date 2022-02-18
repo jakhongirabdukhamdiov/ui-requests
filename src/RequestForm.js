@@ -478,6 +478,7 @@ class RequestForm extends React.Component {
           const state = { selectedUser };
           onChangePatron(selectedUser);
           change('requesterId', selectedUser.id);
+          change('requester', selectedUser);
 
           this.setState(state);
           this.findRequestPreferences(selectedUser.id);
